@@ -1,5 +1,7 @@
 <?php
 require_once 'User.php';
+require_once 'Database.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
@@ -37,5 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <input type="submit" value="Login">
     </form>
+    <button onclick="location.href='register.php'">Sign Up</button>
 </body>
 </html>
