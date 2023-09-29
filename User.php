@@ -28,5 +28,11 @@ class User {
             return false;
         }
     }
+
+    public function getUsers() {
+        $conn = $this->db->connect();
+        $stmt = $conn->query("SELECT id, username FROM users");
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 ?>
