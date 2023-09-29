@@ -18,6 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
     <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+
 </head>
 <body>
     <h1>Sign Up</h1>
